@@ -119,7 +119,7 @@ class Service(SOAPService):
                 results.append(
                     Service.Response(
                         request_id=response.request_id,
-                        reference=response.requested_token.token_reference.reference.uri,
+                        reference=token.token_reference.reference.uri,
                     ),
                 )
 
